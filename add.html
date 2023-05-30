@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Address Form</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.col-25 {
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+		.col-75 {
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+  .btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Address Form</h2>
+		<form action="#">
+			<div class="row">
+				<div class="col-25">
+					<label for="fname">First Name</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="lname">Last Name</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="address">Address</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="address" name="address" placeholder="Your address.." required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="city">City</label>
+				</div>
+				<div class="col-75">
+					<input type="text" id="city" name="city" placeholder="Your city.." required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="Province">Province</label>
+				</div>
+				<div class="col-75">
+					<select id="Province" name="Province" required>
+						<option value="">Select your Province</option>
+						<option value="AL">Bulacan</option>
+						<option value="AK">Pampangga</option>
+						<option value="AZ">Nueva ecija</option>
+						<!-- add more options here -->
+					</select>
+				</div>
+				<a href="Thankyou-page.html" class="btn btn-primary">Done</a>
